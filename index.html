@@ -1,1 +1,59 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pam YouTube Reader</title>
+<style>
+  body { max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; font: 16px/1.6 system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { color: #555; margin-top: 0; }
+  code { background: #f2f2f2; padding: .1rem .3rem; border-radius: .2rem; }
+  footer { margin-top: 3rem; font-size: .875rem; color: #666; }
+</style>
+</head>
+<body>
+  <h1>Pam YouTube Reader</h1>
+  <p class="sub">A private, single-user tool for reading its owner's own YouTube data.</p>
+
+  <h2>What this app does</h2>
+  <p>
+    Pam YouTube Reader is a personal automation tool. It is used by exactly one person &mdash;
+    its owner &mdash; to read <strong>their own</strong> YouTube account data through the
+    YouTube Data API v3: the channel's playlists, the videos inside those playlists,
+    subscriptions, and channel statistics.
+  </p>
+  <p>
+    The tool runs locally on the owner's own computer. Its purpose is to answer the owner's
+    questions about their own saved videos (for example: listing playlists, finding which
+    playlist a video belongs to, or summarizing a playlist's contents).
+  </p>
+
+  <h2>How it works</h2>
+  <p>
+    The owner authorizes the tool with their own Google Account using Google's standard
+    OAuth 2.0 consent flow, requesting read-only access
+    (<code>https://www.googleapis.com/auth/youtube.readonly</code>). Access can be revoked at
+    any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  </p>
+
+  <h2>Who can use it</h2>
+  <p>
+    No one else. There is no sign-up, no account creation, and no multi-user access. The tool
+    is not offered as a service, is not distributed, and is not affiliated with or endorsed by
+    Google or YouTube. It handles no data belonging to anyone other than its single owner.
+  </p>
+
+  <h2>Privacy</h2>
+  <p>
+    See the <a href="./privacy.html">privacy policy</a> for full details of what is accessed,
+    how it is used and stored, and the commitments we follow under Google's API Services User
+    Data Policy.
+  </p>
+
+  <footer>
+    Contact: <a href="mailto:michaelrosejr@gmail.com">michaelrosejr@gmail.com</a><br>
+    Last updated: <time datetime="2026-09-25">September 25, 2026</time>
+  </footer>
+</body>
+</html>
